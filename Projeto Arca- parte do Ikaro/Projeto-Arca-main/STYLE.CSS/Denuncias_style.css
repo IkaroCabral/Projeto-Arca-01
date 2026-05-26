@@ -1,0 +1,149 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f6fb;
+        }
+        
+        
+        .topo {
+            background: #3f4c8b;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        
+        .conteudo {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        
+        .cabeçalho-da-pagina {
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .page-header h1 {
+            margin: 5px 0;
+            color: #2c3e70;
+        }
+        
+        .page-header p {
+            color: #6c757d;
+        }
+        
+      
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        
+        .título-da-seção {
+            color: #2c3e70;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+       
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        
+        textarea {
+            grid-column: span 2;
+            height: 80px;
+        }
+        
+        
+        .map {
+            grid-column: span 2;
+            height: 200px;
+            border-radius: 8px;
+            background: #dfe3ea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 14px;
+        }
+        
+       
+        .upload {
+            grid-column: span 2;
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            border-radius: 8px;
+        }
+        
+        
+        .declaracao {
+            margin-top: 20px;
+        }
+        
+        .declaracao-box {
+            background: #eef1f7;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+        
+        
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .btn-cancel {
+            border: 1px solid #3f4c8b;
+            background: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .btn-submit {
+            background: #3f4c8b;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        /* RESPONSIVO */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        
+            textarea, .map, .upload {
+                grid-column: span 1;
+            }
+        }
+        
+        /* LABEL ESCONDIDO */
+        .hidden-label {
+            display: none;
+        }
