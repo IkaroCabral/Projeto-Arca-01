@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitação de Castração</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fb;
+}
+
+
+.topo {
+   background-color: #1f4487;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.conteudo {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+.cabecalho {
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.page-header h1 {
+    margin: 5px 0;
+    color: #2c3e70;
+}
+
+.page-header p {
+    color: #6c757d;
+}
+
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.titulo {
+    color: #2c3e70;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.selecao-pet {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+.bt-cadastrar-novo {
+    background: white;
+    border: 1px solid #3f4c8b;
+    color: #3f4c8b;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.upload {
+    margin-top: 20px;
+    border: 2px dashed #ccc;
+    padding: 60px;
+    text-align: center;
+    color: #777;
+    border-radius: 8px;
+}
+
+
+.checklist {
+    margin-top: 20px;
+}
+
+.check-item {
+    background: #eef1f7;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bt-cancelar {
+    border: 1px solid #3f4c8b;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.bt-confirmar {
+    background: #3f4c8b;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.hidden-label {
+    display: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topo">
+    <div>Programa ARCA</div>
+    <div>Início &nbsp;&nbsp; Perfil &nbsp;&nbsp; Ajuda</div>
+</div>
+
+<div class="conteudo">
+
+    <div class="cabecalho">
+        <div class="breadcrumb">SERVIÇOS / CASTRAÇÃO</div>
+        <h1>Solicitação de Castração</h1>
+        <p>Solicite a castração gratuita do seu pet</p>
+    </div>
+
+    <div class="card">
+
+        <div class="titulo">Seleção do Animal</div>
+
+        
+        <label class="hidden-label">SISTEMA WEB</label>
+
+        <div class="selecao-pet">
+            <select>
+                <option>Selecione animal cadastrado</option>
+            </select>
+
+            <button class="bt-cadastrar-novo">Cadastrar Novo</button>
+        </div>
+
+        <div class="upload">
+               <input type="file" id="arquivo" name="arquivo" > 
+            </div>
+            <br>
+            <br>
+
+        <div class="requisitos">
+            <div class="section-title">Requisitos</div>
+
+            <div class="check-item">
+                <input type="checkbox"> O animal possui mais de 6 meses de idade
+            </div>
+
+            <div class="check-item">
+                <input type="checkbox"> O animal está em boas condições de saúde
+            </div>
+
+            <div class="check-item">
+                <input type="checkbox"> Declaro estar ciente das orientações pós-operatórias
+            </div>
+        </div>
+
+        <div class="botoes">
+            <button class="bt-cancelar">Cancelar</button>
+            <button class="bt-confirmar">Confirmar</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
