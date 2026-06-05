@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovação Geral</title>
+
+    <link rel="stylesheet" href="../STYLE.CSS/AprovaçãoGeral_style.css">
+</head>
+
+<body>
+
+<header class="cabecalho-superior">
+
+    <div class="logo-arca">
+        <img src="arca-removebg-preview.png" alt="Programa ARCA">
+    </div>
+
+    <nav class="menu-navegacao">
+        <a href="#">Início</a>
+        <a href="#">Perfil</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <div class="area-icones">
+        <span class="icone-configuracao">⚙</span>
+        <img src="sino_png-removebg-preview.png" alt="Notificações">
+    </div>
+
+</header>
+
+<main class="conteudo">
+
+    <section class="cabecalho-pagina">
+
+        <div class="caminho-pagina">
+            PREFEITURA / APROVAÇÃO GERAL
+        </div>
+
+        <h1 class="titulo-pagina">
+            ‹ Aprovação Geral
+        </h1>
+
+        <p class="subtitulo-pagina">
+            Analise e aprove solicitações pendentes do sistema.
+        </p>
+
+    </section>
+
+    <section class="cartao">
+
+        <div class="cabecalho-tabela">
+
+            <h2 class="titulo-secao">
+                Solicitações Pendentes
+            </h2>
+
+            <select class="filtro">
+                <option>Todas</option>
+                <option>Adoção</option>
+                <option>Vacinação</option>
+                <option>Castração</option>
+                <option>Resgate</option>
+                <option>Denúncia</option>
+            </select>
+
+        </div>
+
+        <table class="tabela">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tipo</th>
+                    <th>Solicitante</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>001</td>
+                    <td>Adoção</td>
+                    <td>João Silva</td>
+                    <td>10/06/2026</td>
+                    <td><span class="status-pendente">Pendente</span></td>
+                    <td>
+                        <button class="botao-aprovar">
+                            Aprovar
+                        </button>
+
+                        <button class="botao-rejeitar">
+                            Rejeitar
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>002</td>
+                    <td>Castração</td>
+                    <td>Maria Souza</td>
+                    <td>11/06/2026</td>
+                    <td><span class="status-pendente">Pendente</span></td>
+                    <td>
+                        <button class="botao-aprovar">
+                            Aprovar
+                        </button>
+
+                        <button class="botao-rejeitar">
+                            Rejeitar
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>003</td>
+                    <td>Vacinação</td>
+                    <td>Pedro Alves</td>
+                    <td>12/06/2026</td>
+                    <td><span class="status-pendente">Pendente</span></td>
+                    <td>
+                        <button class="botao-aprovar">
+                            Aprovar
+                        </button>
+
+                        <button class="botao-rejeitar">
+                            Rejeitar
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<footer class="rodape">
+    © Copyright GroupTwo
+</footer>
+
+</body>
+</html>
